@@ -1,1 +1,1 @@
-# c-pp-hess
+# C++ Chess
