@@ -1,3 +1,3 @@
 # C++ Chess
 
-Next steps: Adding GUI
+> Next steps: Adding GUI
