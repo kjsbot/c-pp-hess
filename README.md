@@ -7,6 +7,8 @@ When you start the game, you have the option to choose between playing another p
 
 You can make any (legal) move, including en passent, pawn promotion, and more.....
 
+note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
+
 ### AI
 The chess bot uses a Minimax algorithm and Alpha–beta pruning. It has various levels of diffculty ranging from easy to hard.
 
