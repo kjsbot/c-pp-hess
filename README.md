@@ -2,6 +2,6 @@
 
 Clone the program to play command line chess
 
-# Pictures
+### Pictures
 
 > Next steps: Adding GUI
