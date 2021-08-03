@@ -5,7 +5,7 @@ Clone the program to play command line chess
 ### Game
 When you start the game, you have the option to choose between playing another player or playing against the computer. If you choose computer, you'll be asked to choose between playing as white or black, and what depth you want the AI to search.
 
-You can make any (legal) move, including en passent, pawn promotion, and more.....
+You can make any (legal) move, including en passent, pawn promotion, castling, and more.....
 
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
 
