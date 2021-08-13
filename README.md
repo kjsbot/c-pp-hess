@@ -2,7 +2,7 @@
 
 Clone the program to play command line chess – make sure you have a g++ compiler
 ```
-        Opponent
+       Opponent
 8 ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
 7 ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙
 6 ·  ·  ·  ·  ·  ·  · ·
@@ -12,7 +12,7 @@ Clone the program to play command line chess – make sure you have a g++ compil
 2 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
 1 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
   a  b  c  d  e  f  g h
-           You
+         You
 ```
 
 ## Game
