@@ -1,6 +1,6 @@
 # C++ Chess
 
-Clone the program to play command line chess, make sure you have a g++ compiler
+Clone the program to play command line chess – make sure you have a g++ compiler
 ```
         Opponent
 8 ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
