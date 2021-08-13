@@ -14,6 +14,8 @@ note: make sure your terminal background is a dark color, otherwise the piece co
 The chess bot uses a Minimax algorithm and Alpha–beta pruning. It has various levels of diffculty ranging from easy to hard.
 ### Algorithm Implementation
 
+### Improvements
+
 
 ### Resources
 https://www.chess.com/learn-how-to-play-chess <br>
