@@ -17,7 +17,9 @@ Clone the program to play command line chess – make sure you have a g++ compil
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
 
 ## Game
-When you start the game, you have the option to choose between playing another player or playing against the computer. If you choose computer, you'll be asked to choose between playing as white or black, and what depth (diffculty) you want the AI to search.
+When you start the game, you have the option to choose between playing another player or playing against the computer. 
+
+If you choose computer, you'll be asked to choose between playing as white or black, and what depth (diffculty) you want the AI to search.
 
 You can make any (legal) move, including en passent, pawn promotion, castling, and more.....
 
@@ -37,4 +39,4 @@ https://www.cs.cornell.edu/courses/cs312/2002sp/lectures/rec21.htm
 
 <br>
 
-> Next steps: Adding GUI
+> Next steps: Computer vs Computer mode, GUI
