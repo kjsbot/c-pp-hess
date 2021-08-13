@@ -1,12 +1,8 @@
 # C++ Chess
 
 Clone the program to play command line chess, make sure you have a g++ compiler
-
-## Game
-When you start the game, you have the option to choose between playing another player or playing against the computer. If you choose computer, you'll be asked to choose between playing as white or black, and what depth (diffculty) you want the AI to search.
-
 ```
-          Black
+        Opponent
 8 ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
 7 ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙
 6 ·  ·  ·  ·  ·  ·  · ·
@@ -16,8 +12,11 @@ When you start the game, you have the option to choose between playing another p
 2 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
 1 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
   a  b  c  d  e  f  g h
-          White
+           You
 ```
+
+## Game
+When you start the game, you have the option to choose between playing another player or playing against the computer. If you choose computer, you'll be asked to choose between playing as white or black, and what depth (diffculty) you want the AI to search.
 
 You can make any (legal) move, including en passent, pawn promotion, castling, and more.....
 
