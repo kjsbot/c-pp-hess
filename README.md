@@ -33,6 +33,7 @@ The chess bot uses a Minimax algorithm and Alpha–beta pruning. It has various 
 
 
 ### Resources
+https://www.chessprogramming.org/Main_Page <br>
 https://www.chess.com/learn-how-to-play-chess <br>
 https://www.cs.cornell.edu/courses/cs312/2002sp/lectures/rec21.htm
 
