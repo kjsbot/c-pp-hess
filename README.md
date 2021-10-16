@@ -2,17 +2,18 @@
 
 Clone the program to play command line chess – make sure you have a g++ compiler. You can also check it out [here on Replit](https://replit.com/@kjsbot/c-pp-hess)!
 ```
-       Opponent
-8 ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
-7 ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙
-6 ·  ·  ·  ·  ·  ·  · ·
-5 ·  ·  ·  ·  ·  ·  · ·
-4 ·  ·  ·  ·  ·  ·  · ·
-3 ·  ·  ·  ·  ·  ·  · ·
-2 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
-1 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
-  a  b  c  d  e  f  g h
-         You
+       Player 2 (Black)
+8 ｜ ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
+7 ｜ ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙
+6 ｜ ·  ·  ·  ·  ·  ·  · ·
+5 ｜ ·  ·  ·  ·  ·  ·  · ·
+4 ｜ ·  ·  ·  ·  ·  ·  · ·
+3 ｜ ·  ·  ·  ·  ·  ·  · ·
+2 ｜ ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
+1 ｜ ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
+⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
+     a  b  c  d  e  f  g h
+      Player 1 (White)
 ```
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
 
