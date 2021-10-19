@@ -1,6 +1,6 @@
 # C++ Chess
 
-Check out the command-line version of the game [here on Replit](https://replit.com/@kjsbot/c-pp-hess)! To play with GUI, clone the program – make sure you have a g++ compiler. 
+Check out the command-line version of the game [here on Replit](https://replit.com/@kjsbot/c-pp-hess)! To play with GUI, clone the program (make sure you have a g++ compiler) 
 ```
        Player 2 (Black)
 8 ｜ ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
