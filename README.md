@@ -25,12 +25,9 @@ If you choose computer, you'll be asked to choose between playing as white or bl
 You can make any (legal) move, including en passent, pawn promotion, castling, and more.....
 
 
-## AI
+## Chess Bot
 ### Overview
 The chess bot uses a Minimax algorithm and Alpha–beta pruning. It has various levels of diffculty ranging from easy to hard.
-### Algorithm Implementation
-
-### Improvements
 
 
 ### Resources
