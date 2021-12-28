@@ -141,26 +141,119 @@ void Board::display() {
 	cout << "       Player 1 (White)" << endl << endl;
 }
 
-// CHECK FOR LEGAL MOVES!!
+// MAKE VECTOR OF ALL LEGAL MOVES
+vector<int> Board::updownMovement(string curPos, int pieceColor) {
+	inputToCoor(curPos);
+
+	int y = currentPos.y;
+	int x = currentPos.x;
+	vector<vector<int>> legalMoves;
+	vector<coordinate> updownOffsets = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+	for (int i=0; i<5; i++) {
+		for (int j=1; j<8; j++) {
+			int yVal = y+j*updownOffsets.at(i).y;
+			int xVal = x+j*updownOffsets.at(i).x;
+
+			if ( yVal > 8 || yVal < 0 || xVal > 8 || xVal < 0 ) {
+				continue;
+			} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
+				continue;
+			} else {
+
+			}
+		}
+	}
+    //return legalMoves;
+}
+
+vector<int> Board::diagonalMovement(string curPos, int pieceColor) {
+	inputToCoor(curPos);
+
+	int y = currentPos.y;
+	int x = currentPos.x;
+	vector<vector<int>> legalMoves;
+	vector<coordinate> diagonalOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}};
+
+	for (int i=0; i<5; i++) {
+		for (int j=1; j<8; j++) {
+			int yVal = y+j*diagonalOffsets.at(i).y;
+			int xVal = x+j*diagonalOffsets.at(i).x;
+			
+			if ( yVal > 8 || yVal < 0 || xVal > 8 || xVal < 0 ) {
+				continue;
+			} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
+				continue;
+			} else {
+
+			}
+		}
+	}
+    //return legalMoves;
+}
+
+
+vector<int> Board::kingLogic(string curPos, int pieceColor) {
+	inputToCoor(curPos);
+
+	int y = currentPos.y;
+	int x = currentPos.x;
+	vector<vector<int>> legalMoves;
+	vector<coordinate> kingOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+    for (int i=0; i<10; i++ ) {
+		int yVal = y+kingOffsets.at(i).y;
+		int xVal = x+kingOffsets.at(i).x;
+
+		if ( yVal > 8 || yVal < 0 || xVal > 8 || xVal < 0 ) {
+			continue;
+		} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
+			continue;
+		} else {
+			cout << "hi";
+		}
+    }
+    //return legalMoves;
+}
+
+
 vector<int> Board::knightLogic(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
 	int y = currentPos.y;
 	int x = currentPos.x;
-	
 	vector<vector<int>> legalMoves;
+	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0},                                      {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
 
-	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
+    for (int i=0; i<10; i++ ) {
+		int yVal = y+knightOffsets.at(i).y;
+		int xVal = x+knightOffsets.at(i).x;
 
-	for (int i=0; i<10; i++ ) {
-		if ( y+knightOffsets.at(i).y > 8 || y+knightOffsets.at(i).y < 0 || x+knightOffsets.at(i).x > 8 || x+knightOffsets.at(i).x < 0) {
+		if ( yVal > 8 || yVal < 0 || xVal > 8 || xVal < 0 ) {
 			continue;
-		} else if (true) {
-			// check if the value will be a piece of its own color
+		} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
 			continue;
 		} else {
 			cout << "hi";
 		}
-	}
+    }
+    //return legalMoves;
+}
+
+
+vector<int> Board::pawnLogic(string curPos, int pieceColor) {
+	inputToCoor(curPos);
+
+	int y = currentPos.y;
+	int x = currentPos.x;
+	vector<vector<int>> legalMoves;
+
+	vector<coordinate> whitePawnOffsets = {{1, 0}, {1, 1}, {1, -1}}; // multiply by pieceColor
+
+    // can only move up once at a time
+	// first move can either move up one or two times
+	// eat diagonally
+
+
     //return legalMoves;
 }
