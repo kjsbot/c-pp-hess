@@ -19,7 +19,7 @@ To play, clone the program - make sure you have a GCC compiler
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
 
 ### To Do:
-<li>Improve pawn logic</li>
+<li>Pawn logic!!</li>
 <li>Connect computer opponent to game</li>
 
 ### Resources
