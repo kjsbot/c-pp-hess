@@ -19,7 +19,8 @@ To play, clone the program - make sure you have a g++ compiler
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
 
 ### To Do:
-<li>Improve computer opponent</li>
+<li>Improve pawn logic</li>
+<li>Work on computer opponent</li>
 
 ### Resources
 https://www.chessprogramming.org/Main_Page <br>
@@ -38,9 +39,3 @@ You can make any (legal) move, including en passent, pawn promotion, castling, a
 ### Overview
 The chess bot uses a Minimax algorithm and Alpha–beta pruning. It has various levels of diffculty ranging from easy to hard.
  -->
-
-
-
-
-
-
