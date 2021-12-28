@@ -150,22 +150,17 @@ vector<int> Board::knightLogic(string curPos, int pieceColor) {
 	
 	vector<vector<int>> legalMoves;
 
-	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0},                                      {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
+	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
 
-    int color = 1; // white
-    int currentPos[2] = {1, 1};
-
-    for (int i=0; i<10; i++ ) {
+	for (int i=0; i<10; i++ ) {
 		if ( y+knightOffsets.at(i).y > 8 || y+knightOffsets.at(i).y < 0 || x+knightOffsets.at(i).x > 8 || x+knightOffsets.at(i).x < 0) {
 			continue;
 		} else if (true) {
 			// check if the value will be a piece of its own color
-
+			continue;
 		} else {
 			cout << "hi";
 		}
-
-
-    }
+	}
     //return legalMoves;
 }
