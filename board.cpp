@@ -31,13 +31,11 @@ Board::Board() {
 
 Board::~Board() { }
 
-// Square* Board::getPiece() { };
-
-//void Board::movePiece(coordinate currentPos, coordinate targetPos) {
+void Board::movePiece(coordinate currentPos, coordinate targetPos) {
 //	board[currentPos.y][currentPos.x].piece.
 //	board[targetPos.y][targetPos.x].piece = board[currentPos.y][currentPos.x].piece;
 //	board[currentPos.y][currentPos.x] = nullptr;
-//}
+}
 
 void Board::inputToCoor(string input) {
 	string targetposX = input.substr(2, 1);
@@ -140,7 +138,7 @@ void Board::display() {
 }
 
 // MAKE VECTOR OF ALL LEGAL MOVES
-vector<int> Board::updownMovement(string curPos, int pieceColor) {
+vector<vector<int>> Board::updownMovement(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
 	int y = currentPos.y;
@@ -158,14 +156,14 @@ vector<int> Board::updownMovement(string curPos, int pieceColor) {
 			} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
 				continue;
 			} else {
-
+				legalMoves.push_back( {yVal, xVal} );
 			}
 		}
 	}
-    //return legalMoves;
+    return legalMoves;
 }
 
-vector<int> Board::diagonalMovement(string curPos, int pieceColor) {
+vector<vector<int>> Board::diagonalMovement(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
 	int y = currentPos.y;
@@ -183,14 +181,14 @@ vector<int> Board::diagonalMovement(string curPos, int pieceColor) {
 			} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
 				continue;
 			} else {
-
+				legalMoves.push_back( {yVal, xVal} );
 			}
 		}
 	}
-    //return legalMoves;
+    return legalMoves;
 }
 
-vector<int> Board::kingLogic(string curPos, int pieceColor) {
+vector<vector<int>> Board::kingLogic(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
 	int y = currentPos.y;
@@ -207,21 +205,21 @@ vector<int> Board::kingLogic(string curPos, int pieceColor) {
 		} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
 			continue;
 		} else {
-			cout << "hi";
+			legalMoves.push_back( {yVal, xVal} );
 		}
     }
-    //return legalMoves;
+    return legalMoves;
 }
 
-vector<int> Board::knightLogic(string curPos, int pieceColor) {
+vector<vector<int>> Board::knightLogic(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
 	int y = currentPos.y;
 	int x = currentPos.x;
 	vector<vector<int>> legalMoves;
-	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0},                                      {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
+	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
 
-    for (int i=0; i<10; i++ ) {
+	for (int i=0; i<10; i++ ) {
 		int yVal = y+knightOffsets.at(i).y;
 		int xVal = x+knightOffsets.at(i).x;
 
@@ -230,13 +228,13 @@ vector<int> Board::knightLogic(string curPos, int pieceColor) {
 		} else if (pieceColor == (*board[yVal][xVal].piece).pieceColor) {
 			continue;
 		} else {
-			cout << "hi";
+			legalMoves.push_back( {yVal, xVal} );
 		}
-    }
-    //return legalMoves;
+	}
+	return legalMoves;
 }
 
-vector<int> Board::pawnLogic(string curPos, int pieceColor) {
+vector<vector<int>> Board::pawnLogic(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
 	int y = currentPos.y;
@@ -245,9 +243,10 @@ vector<int> Board::pawnLogic(string curPos, int pieceColor) {
 
 	vector<coordinate> whitePawnOffsets = {{1, 0}, {1, 1}, {1, -1}}; // multiply by pieceColor
 
-    // can only move up once at a time
+     	// can only move up once at a time
 	// first move can either move up one or two times
 	// eat diagonally
+	// legalMoves.push_back( {yVal, xVal} );
 
-    //return legalMoves;
+    return legalMoves;
 }
