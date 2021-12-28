@@ -61,7 +61,7 @@ void player_player() {
 	// Board board;
 	string input;
 
-	//while (true) {
+	while (true) {
 		board.display();
 
 		//if (board.isCheckmate()) {
@@ -76,6 +76,9 @@ void player_player() {
 			while (true) {
 				cout << "WHTIE's move: ";
 				cin >> input;
+				
+				if (input == "Q" || input == "q") { break; }
+
 				// && board.validateInput(input, board.currentSide);
 				
 				if (input_parser(input) && board.validateInput(input, board.currentSide)) { break; }
@@ -85,8 +88,6 @@ void player_player() {
 					
 				// check for input concerning legal moves
 			}
-
-			//if (input == "Q" || input == "q") { break; }
 
 			// basic input parser
 			// legal moves checker
@@ -99,8 +100,11 @@ void player_player() {
 
 		} else {
 			cout << "BLACK's move: ";
-			// user input
-			// basic input parser
+			cin >> input;
+			
+			if (input == "Q" || input == "q") { break; }
+			
+			if (input_parser(input) && board.validateInput(input, board.currentSide)) { break; } // basic input parser
 			// legal moves checker
 			// check if move will put player in check
 
@@ -109,10 +113,9 @@ void player_player() {
 
 			board.currentSide = 1;
 		}
-	//}
-
+	}
 }
 
 void player_computer() {
-  cout << "sike";
+  cout << "bot broke :(";
 }
