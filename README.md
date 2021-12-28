@@ -17,6 +17,9 @@ To play, clone the program - make sure you have a g++ compiler
       Player 1 (White)
 ```
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
+
+### To Do:
+<li>Improve computer opponent</li>
 <!--
 ## Game
 When you start the game, you have the option to choose between playing another player or playing against the computer. 
