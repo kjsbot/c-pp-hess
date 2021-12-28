@@ -21,7 +21,7 @@ The board is made up of unicode characters:
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
 
 ### To Do:
-<li>Pawn logic!!</li>
+<li>Fix pawn logic!!</li>
 <li>Work on computer opponent</li>
 
 ### Resources
