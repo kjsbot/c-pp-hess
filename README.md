@@ -22,7 +22,7 @@ note: make sure your terminal background is a dark color, otherwise the piece co
 
 ### To Do:
 <li>Pawn logic!!</li>
-<li>Connect computer opponent to game</li>
+<li>Work on computer opponent</li>
 
 ### Resources
 https://www.chessprogramming.org/Main_Page <br>
