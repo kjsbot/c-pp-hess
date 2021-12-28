@@ -42,7 +42,6 @@ Board::~Board() { }
 void Board::inputToCoor(string input) {
 	string targetposX = input.substr(2, 1);
 	string currentposX = input.substr(0, 1);
-	
 	currentPos.y = 8 - stoi(input.substr(1, 2));
 	targetPos.y = 8 - stoi(input.substr(3, 4));
 
@@ -81,7 +80,6 @@ void Board::inputToCoor(string input) {
 
 bool Board::validateInput(string input, int color) {
 	inputToCoor(input);
-
 	Piece* currentPiece = board[currentPos.y][currentPos.x].piece;
 	Piece* targetPiece = board[targetPos.y][targetPos.x].piece;
 
@@ -192,7 +190,6 @@ vector<int> Board::diagonalMovement(string curPos, int pieceColor) {
     //return legalMoves;
 }
 
-
 vector<int> Board::kingLogic(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
@@ -216,14 +213,13 @@ vector<int> Board::kingLogic(string curPos, int pieceColor) {
     //return legalMoves;
 }
 
-
 vector<int> Board::knightLogic(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
 	int y = currentPos.y;
 	int x = currentPos.x;
 	vector<vector<int>> legalMoves;
-	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
+	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0},                                      {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
 
     for (int i=0; i<10; i++ ) {
 		int yVal = y+knightOffsets.at(i).y;
@@ -240,7 +236,6 @@ vector<int> Board::knightLogic(string curPos, int pieceColor) {
     //return legalMoves;
 }
 
-
 vector<int> Board::pawnLogic(string curPos, int pieceColor) {
 	inputToCoor(curPos);
 
@@ -253,7 +248,6 @@ vector<int> Board::pawnLogic(string curPos, int pieceColor) {
     // can only move up once at a time
 	// first move can either move up one or two times
 	// eat diagonally
-
 
     //return legalMoves;
 }
