@@ -20,6 +20,11 @@ note: make sure your terminal background is a dark color, otherwise the piece co
 
 ### To Do:
 <li>Improve computer opponent</li>
+
+### Resources
+https://www.chessprogramming.org/Main_Page <br>
+https://www.chess.com/learn-how-to-play-chess <br>
+https://www.cs.cornell.edu/courses/cs312/2002sp/lectures/rec21.htm
 <!--
 ## Game
 When you start the game, you have the option to choose between playing another player or playing against the computer. 
@@ -34,11 +39,8 @@ You can make any (legal) move, including en passent, pawn promotion, castling, a
 The chess bot uses a Minimax algorithm and Alpha–beta pruning. It has various levels of diffculty ranging from easy to hard.
  -->
 
-### Resources
-https://www.chessprogramming.org/Main_Page <br>
-https://www.chess.com/learn-how-to-play-chess <br>
-https://www.cs.cornell.edu/courses/cs312/2002sp/lectures/rec21.htm
 
-<br/>
 
-> Next Steps: Adding GUI 
+
+
+
