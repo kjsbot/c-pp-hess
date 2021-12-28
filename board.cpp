@@ -223,7 +223,7 @@ vector<int> Board::knightLogic(string curPos, int pieceColor) {
 	int y = currentPos.y;
 	int x = currentPos.x;
 	vector<vector<int>> legalMoves;
-	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0},                                      {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
+	vector<coordinate> knightOffsets = {{1, 1}, {-1, 1}, {-1, -1}, {1, -1}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0, 2}, {0, -2}};
 
     for (int i=0; i<10; i++ ) {
 		int yVal = y+knightOffsets.at(i).y;
