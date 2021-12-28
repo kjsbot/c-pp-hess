@@ -20,7 +20,7 @@ note: make sure your terminal background is a dark color, otherwise the piece co
 
 ### To Do:
 <li>Improve pawn logic</li>
-<li>Work on computer opponent</li>
+<li>Connect computer opponent to game</li>
 
 ### Resources
 https://www.chessprogramming.org/Main_Page <br>
