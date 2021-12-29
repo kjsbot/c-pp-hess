@@ -103,33 +103,19 @@ void Board::display() {
 		for (int j=0; j < 8; j++) {
 			Piece* currPiece = board[i][j].getPiece(); // memory of piece at Square
 
-			if (currPiece == nullptr) {
-				cout << " · ";
-			} else if ((*currPiece).name == "WQ") {
-				cout << " ♛ ";
-			} else if ((*currPiece).name == "WK") {
-				cout << " ♚ ";
-			} else if ((*currPiece).name == "WB") {
-				cout << " ♝ ";
-			} else if ((*currPiece).name == "WR") {
-				cout << " ♜ ";
-			} else if ((*currPiece).name == "WN") {
-				cout << " ♞ ";
-			} else if ((*currPiece).name == "WP") {
-				cout << " ♟ ";
-			} else if ((*currPiece).name == "BQ") {
-				cout << " ♕ ";
-			} else if ((*currPiece).name == "BK") {
-				cout << " ♔ ";
-			} else if ((*currPiece).name == "BB") {
-				cout << " ♗ ";
-			} else if ((*currPiece).name == "BR") {
-				cout << " ♖ ";
-			} else if ((*currPiece).name == "BN") {
-				cout << " ♘ ";
-			} else if ((*currPiece).name == "BP") {
-				cout << " ♙ ";
-			}
+			if (currPiece == nullptr) { cout << " · "; } 
+			else if ((*currPiece).name == "WQ") { cout << " ♛ "; } 
+			else if ((*currPiece).name == "WK") { cout << " ♚ "; } 
+			else if ((*currPiece).name == "WB") { cout << " ♝ "; } 
+			else if ((*currPiece).name == "WR") { cout << " ♜ "; } 
+			else if ((*currPiece).name == "WN") { cout << " ♞ "; } 
+			else if ((*currPiece).name == "WP") { cout << " ♟ "; } 
+			else if ((*currPiece).name == "BQ") { cout << " ♕ "; } 
+			else if ((*currPiece).name == "BK") { cout << " ♔ "; } 
+			else if ((*currPiece).name == "BB") { cout << " ♗ "; } 
+			else if ((*currPiece).name == "BR") { cout << " ♖ "; } 
+			else if ((*currPiece).name == "BN") { cout << " ♘ "; } 
+			else if ((*currPiece).name == "BP") { cout << " ♙ "; }
 		}
 		cout << endl;
 	}
