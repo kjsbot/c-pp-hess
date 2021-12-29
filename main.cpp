@@ -61,61 +61,48 @@ void player_player() {
 	// Board board;
 	string input;
 
-	while (true) {
+	//while (true) {
 		board.display();
 
-		//if (board.isCheckmate()) {
-			// get current side
-		//}
+		//if (board.isCheckmate()) { get current side }
+		//if (board.isStalemate()) { get current side }
 		
-		//if (board.isStalemate()) {
-			// get current side
-		//}
-		
-		if (board.currentSide == 1) {
+		if (board.currentSide == -1) {
 			while (true) {
 				cout << "WHTIE's move: ";
 				cin >> input;
-				
 				if (input == "Q" || input == "q") { break; }
-
-				// && board.validateInput(input, board.currentSide);
 				
-				if (input_parser(input) && board.validateInput(input, board.currentSide)) { break; }
-				// check for basic input
-					// does your input coordinate have one of your own pieces
-					// does the target location
-					
-				// check for input concerning legal moves
+				// Input string checker, Basic input checker, Pseudo Legal move checker
+				if (input_parser(input) && board.validateInput(input, board.currentSide) && board.pseudoMovesChecker(input)) {
+					cout << "move success!";
+					break; 
+				}
+				// Legal moves checker
 			}
-
-			// basic input parser
-			// legal moves checker
-			// check if move will put player in check
-			
-			// if all is ok:
-				// update board
-				
-			board.currentSide = -1;
+			//board.movePiece();
+			board.currentSide = 1;
 
 		} else {
-			cout << "BLACK's move: ";
-			cin >> input;
-			
-			if (input == "Q" || input == "q") { break; }
-			
-			if (input_parser(input) && board.validateInput(input, board.currentSide)) { break; } // basic input parser
-			// legal moves checker
-			// check if move will put player in check
+			while (true) {
+				cout << "BLACK's move: ";
+				cin >> input;
+				if (input == "Q" || input == "q") { break; }
 
-			// if all is ok:
-				// update board
-
-			board.currentSide = 1;
+				// Input string checker, Basic input checker, Pseudo Legal move checker
+				if (input_parser(input) && board.validateInput(input, board.currentSide) && board.pseudoMovesChecker(input)) {
+					break; 
+				}
+				// Legal moves checker
+			}
+			//board.movePiece();
+			board.currentSide = -1;
 		}
-	}
+	//if (input == "Q" || input == "q") { break; }
+	//}
+
 }
 
 void player_computer() {
-  cout << "bot broke :(";
+  cout << "sike";
 }
