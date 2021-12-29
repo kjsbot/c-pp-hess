@@ -58,37 +58,23 @@ void Board::inputToCoor(string input) {
 	currentPos.y = 8 - stoi(input.substr(1, 2));
 	targetPos.y = 8 - stoi(input.substr(3, 4));
 
-	if (currentposX == "a") {
-		currentPos.x = 0;
-	} else if (currentposX == "b") {
-		currentPos.x = 1;
-	} else if (currentposX == "c") {
-		currentPos.x = 2;
-	} else if (currentposX == "d") {
-		currentPos.x = 3;
-	} else if (currentposX == "e") {
-		currentPos.x = 4;
-	} else if (currentposX == "f") {
-		currentPos.x = 5;
-	} else if (currentposX == "g") {
-		currentPos.x = 6;
-	} else { currentPos.x = 7; }
+	if (currentposX == "a") { currentPos.x = 0; } 
+	else if (currentposX == "b") { currentPos.x = 1; } 
+	else if (currentposX == "c") { currentPos.x = 2; } 
+	else if (currentposX == "d") { currentPos.x = 3; } 
+	else if (currentposX == "e") { currentPos.x = 4; } 
+	else if (currentposX == "f") { currentPos.x = 5; } 
+	else if (currentposX == "g") { currentPos.x = 6; } 
+	else { currentPos.x = 7; }
 
-	if (targetposX == "a") {
-		targetPos.x = 0;
-	} else if (targetposX == "b") {
-		targetPos.x = 1;
-	} else if (targetposX == "c") {
-		targetPos.x = 2;
-	} else if (targetposX == "d") {
-		targetPos.x = 3;
-	} else if (targetposX == "e") {
-		targetPos.x = 4;
-	} else if (targetposX == "f") {
-		targetPos.x = 5;
-	} else if (targetposX == "g") {
-		targetPos.x = 6;
-	} else { targetPos.x = 7; }
+	if (targetposX == "a") { targetPos.x = 0; } 
+	else if (targetposX == "b") { targetPos.x = 1; } 
+	else if (targetposX == "c") { targetPos.x = 2; } 
+	else if (targetposX == "d") { targetPos.x = 3; } 
+	else if (targetposX == "e") { targetPos.x = 4; } 
+	else if (targetposX == "f") { targetPos.x = 5; } 
+	else if (targetposX == "g") { targetPos.x = 6; } 
+	else { targetPos.x = 7; }
 }
 
 bool Board::validateInput(string input, int color) {
