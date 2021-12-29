@@ -58,7 +58,7 @@ bool input_parser(string input) {
 
 void player_player() {
 	
-	// Board board;
+	Board board;
 	string input;
 
 	//while (true) {
