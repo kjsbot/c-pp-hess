@@ -21,8 +21,9 @@ The board is made up of unicode characters:
 note: make sure your terminal background is a dark color, otherwise the piece colors will be inverted
 
 ### To Do:
+<li>Completely rewrite the OOP logic (gonna take a while)</li>
 <li>Fix pawn logic!!</li>
-<li>Work on computer opponent</li>
+<li>Computer opponent is a massive idiot</li>
 
 ### Resources
 https://www.chessprogramming.org/Main_Page <br>
