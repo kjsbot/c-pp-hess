@@ -23,7 +23,7 @@ note: make sure your terminal background is a dark color, otherwise the piece co
 ### To Do:
 <li>Completely rewrite/improve the OOP logic (gonna take a while)</li>
 <li>Fix pawn logic!!</li>
-<li>Computer opponent is a massive idiot</li>
+<li>Computer opponent is acting weird</li>
 
 ### Resources
 https://www.chessprogramming.org/Main_Page <br>
